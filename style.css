@@ -64,3 +64,39 @@ button {
 button:hover {
     background-color: #218838;
 }
+/* General button styling */
+button {
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s; /* Makes color change smooth */
+}
+
+/* Add / Update Button (Green) */
+#submitBtn {
+    background-color: #28a745;
+}
+#submitBtn:hover {
+    background-color: #218838;
+}
+
+/* Edit Button (Yellow/Orange) */
+.btn-warning {
+    background-color: #ffc107;
+    color: #212529; /* Dark text looks better on yellow */
+    margin-right: 5px;
+}
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+/* Delete Button (Red) */
+.btn-danger {
+    background-color: #dc3545;
+}
+.btn-danger:hover {
+    background-color: #c82333;
+}

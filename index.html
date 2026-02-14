@@ -3,37 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Employee Management System</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
+
     <h1>Employee Management</h1>
-    <div class="form-container">
-    <h3>Add New Employee</h3>
-    <input type="text" id="name" placeholder="Full Name">
-    <input type="email" id="email" placeholder="Email Address">
-    <input type="text" id="dept" placeholder="Department">
-    <button onclick="addEmployee()">Add Employee</button>
-    </div>
-    <table border="1px">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>name</th>
-            <th>Email</th>
-            <th>Department</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>Swaroop</td>
-            <td>swaroopgaikwad199@gmail.com</td>
-            <td>IT Operation</td>
-        </tr>
-    </tbody>
+
+   <div class="form-container">
+    <h3 id="form-heading">Add New Employee</h3> <input type="text" id="name" placeholder="Full Name" required>
+    <input type="email" id="email" placeholder="Email Address" required>
+    <input type="text" id="dept" placeholder="Department" required>
+    
+    <button id="submitBtn" onclick="saveEmployee()">Add Employee</button>
+    
+    <button id="cancelBtn" onclick="resetForm()" style="display: none; background-color: #6c757d;">Cancel</button>
+</div>
+
+    <table border="1px" class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Department</th>
+                <th>Actions</th> </tr>
+        </thead>
+        <tbody id="employeeTableBody">
+            </tbody>
     </table>
-<script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
