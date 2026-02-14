@@ -1,0 +1,8 @@
+POST http://localhost:8080/api/employees
+Content-Type: application/json
+
+{
+  "name": "Swaroop Gaikwad",
+  "email": "swaroop@developer.com",
+  "department": "Full Stack Java"
+}
